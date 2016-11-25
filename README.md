@@ -4,4 +4,4 @@ Xamarin.Forms で、ラジオボタンのように Image の画像を On / Off �
 
 ![](screenshot01.gif)
 
-this is answer of - [Xamarin.Formsで複数のImageを使ってラジオボタンのような機能を作りたい(56552)｜teratail](https://teratail.com/questions/56552) 
+this is the answer of - [Xamarin.Formsで複数のImageを使ってラジオボタンのような機能を作りたい(56552)｜teratail](https://teratail.com/questions/56552) 
