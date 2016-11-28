@@ -8,7 +8,8 @@ namespace RadioImageSample
 		{
 			InitializeComponent();
 
-			MainPage = new RadioImageSamplePage();
+//		    MainPage = new RadioImageSamplePage();
+		    MainPage = new GridSamplePage();
 		}
 
 		protected override void OnStart()

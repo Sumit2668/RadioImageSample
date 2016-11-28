@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:cv="clr-namespace:RadioImageSample"
+    x:Class="RadioImageSample.GridSamplePage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <cv:IndexToImageConverter x:Key="imgConv" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <Grid Margin="0, 20, 0, 0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <Image Grid.Column="0" x:Name="image1"
+               Source="{Binding SelectedIndex, Converter={StaticResource imgConv}, ConverterParameter=1}" />
+        <Image Grid.Column="1" x:Name="image2"
+               Source="{Binding SelectedIndex, Converter={StaticResource imgConv}, ConverterParameter=2}" />
+        <Image Grid.Column="2" x:Name="image3"
+               Source="{Binding SelectedIndex, Converter={StaticResource imgConv}, ConverterParameter=3}" />
+    </Grid>
+</ContentPage>
